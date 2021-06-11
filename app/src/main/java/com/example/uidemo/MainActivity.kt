@@ -54,6 +54,7 @@ class MainActivity : AppCompatActivity() {
                 dlg.arguments = myBundle
                 dlg.show(supportFragmentManager,"qwe")
             }
+
             "Exit" -> {
                 //show dialog
                 var dlg =MyDialog()
@@ -88,7 +89,6 @@ class MainActivity : AppCompatActivity() {
                     Toast.makeText(this,"cancelling.....",Toast.LENGTH_LONG).show()
                 })
                 snackbar.show()
-
 
             }
             "Stop" ->{

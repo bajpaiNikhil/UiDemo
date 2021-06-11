@@ -74,4 +74,16 @@
         app:layout_constraintStart_toEndOf="@+id/timeT"
         app:layout_constraintTop_toTopOf="@+id/timeT"
         app:srcCompat="@android:drawable/ic_lock_idle_alarm" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="275dp"
+        android:layout_height="197dp"
+        android:layout_marginTop="64dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timeT"
+        app:srcCompat="@android:drawable/ic_menu_delete" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
