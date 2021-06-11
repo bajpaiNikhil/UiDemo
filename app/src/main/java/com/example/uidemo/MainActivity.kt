@@ -11,19 +11,25 @@ import android.view.View
 import android.widget.ProgressBar
 import android.widget.TextView
 import android.widget.Toast
+import androidx.constraintlayout.widget.ConstraintLayout
+import com.google.android.material.snackbar.Snackbar
 
 class MainActivity : AppCompatActivity() {
 
-    lateinit var pDlg : ProgressDialog
+    //lateinit var pDlg : ProgressDialog
 
     lateinit var progressBar : ProgressBar
+
+    lateinit var parent : ConstraintLayout
+
+    lateinit var snackbar: Snackbar
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
         progressBar = findViewById(R.id.progressBar)
-
+        parent = findViewById(R.id.cLayout)
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
@@ -76,11 +82,20 @@ class MainActivity : AppCompatActivity() {
                 toast.show()
 
 
+                snackbar = Snackbar.make(parent , "This is the Way!!", Snackbar.LENGTH_INDEFINITE)
+
+                snackbar.setAction("Cancel" , View.OnClickListener {
+                    Toast.makeText(this,"cancelling.....",Toast.LENGTH_LONG).show()
+                })
+                snackbar.show()
+
+
             }
             "Stop" ->{
             //cancel the dialog
             //    pDlg.cancel()
                 progressBar.visibility = View.INVISIBLE
+                snackbar.dismiss()
             }
         }
 
