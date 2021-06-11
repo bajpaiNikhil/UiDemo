@@ -55,7 +55,6 @@ class DateTimeActivity : AppCompatActivity() , DatePickerDialog.OnDateSetListene
         Toast.makeText(this , "date and time found $date ",Toast.LENGTH_LONG).show()
         dateTextView.text = date
 
-
     }
 
     override fun onTimeSet(view: TimePicker?, hourOfDay: Int, minute: Int) {

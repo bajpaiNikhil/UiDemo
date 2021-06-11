@@ -4,6 +4,7 @@ import android.app.ProgressDialog
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Gravity
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
@@ -70,10 +71,13 @@ class MainActivity : AppCompatActivity() {
                 //Show [progress dialog
                 //pDlg = ProgressDialog.show(this , "Downloading..." ,"Please wait.")  old version .
                 progressBar.visibility = View.VISIBLE
+                val toast = Toast.makeText(this, " we are here at start " , Toast.LENGTH_LONG)
+                toast.setGravity(Gravity.TOP , 30 ,100)
+                toast.show()
+
 
             }
             "Stop" ->{
-
             //cancel the dialog
             //    pDlg.cancel()
                 progressBar.visibility = View.INVISIBLE
