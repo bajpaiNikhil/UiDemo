@@ -9,7 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.UiDemo">
-        <activity android:name=".DateTimeActivity"></activity>
+        <activity android:name=".CustomAdapterActivity"></activity>
+        <activity android:name=".ActivitySpinnerDemo" />
+        <activity android:name=".ListViewActivity" />
+        <activity android:name=".RadioButtonActivity" />
+        <activity android:name=".CheckBoxDemoActivity" />
+        <activity android:name=".DateTimeActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

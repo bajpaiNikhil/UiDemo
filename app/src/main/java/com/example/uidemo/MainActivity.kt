@@ -8,6 +8,7 @@ import android.view.Gravity
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
+import android.widget.Button
 import android.widget.ProgressBar
 import android.widget.TextView
 import android.widget.Toast
@@ -125,6 +126,37 @@ class MainActivity : AppCompatActivity() {
 
         val i = Intent(this , DateTimeActivity::class.java)
         startActivity(i)
+
+
+    }
+
+    fun buttonClick(view: View) {
+
+        val btm = view as Button
+
+        lateinit var intent : Intent
+
+        when(view.id){
+            R.id.cbDemoB ->{
+                intent = Intent(this, CheckBoxDemoActivity::class.java)
+            }
+            R.id.rbDemoB ->{
+                intent = Intent(this,RadioButtonActivity::class.java)
+            }
+
+            R.id.lvDemoB ->{
+                intent = Intent(this,ListViewActivity::class.java)
+
+            }
+            R.id.spDemoB ->{
+                intent = Intent(this,ActivitySpinnerDemo::class.java)
+            }
+
+            R.id.custonB ->{
+                intent = Intent(this,CustomAdapterActivity::class.java)
+            }
+        }
+        startActivity(intent)
 
 
     }

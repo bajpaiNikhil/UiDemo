@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CheckBoxDemoActivity">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="216dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="60dp"
+        android:text="CheckBoxDemo"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.418"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/locationT"
+        android:layout_width="167dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="44dp"
+        android:text="Select Location"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <LinearLayout
+        android:layout_width="362dp"
+        android:layout_height="220dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/locationT">
+
+        <CheckBox
+            android:id="@+id/blrB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="cbClicked"
+            android:text="Bangalore" />
+
+        <CheckBox
+            android:id="@+id/DLHB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="cbClicked"
+            android:text="Delhi" />
+
+        <CheckBox
+            android:id="@+id/puneB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="cbClicked"
+            android:text="Pune" />
+
+        <CheckBox
+            android:id="@+id/hydB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="cbClicked"
+            android:text="Hydrabad" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

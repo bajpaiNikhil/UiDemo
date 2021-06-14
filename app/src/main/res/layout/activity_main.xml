@@ -25,8 +25,8 @@
         android:id="@+id/floatingActionButton"
         android:layout_width="64dp"
         android:layout_height="56dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginBottom="40dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="76dp"
         android:clickable="true"
         android:onClick="fabClick"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -47,5 +47,72 @@
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/cbDemoB"
+        android:layout_width="194dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="124dp"
+        android:onClick="buttonClick"
+        android:text="ButtonCheckBox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar" />
+
+    <Button
+        android:id="@+id/rbDemoB"
+        android:layout_width="231dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="36dp"
+        android:onClick="buttonClick"
+        android:text="ButtonRadioButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbDemoB" />
+
+    <Button
+        android:id="@+id/lvDemoB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="155dp"
+        android:onClick="buttonClick"
+        android:text="ListViewDemo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rbDemoB" />
+
+    <Button
+        android:id="@+id/spDemoB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="137dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="180dp"
+        android:onClick="buttonClick"
+        android:text="Spinner Demo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.814"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lvDemoB" />
+
+    <Button
+        android:id="@+id/custonB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="123dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="194dp"
+        android:onClick="buttonClick"
+        android:text="custom Adapter Demo"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.232"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spDemoB" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
