@@ -14,7 +14,7 @@ class RadioButtonActivity : AppCompatActivity() {
 
         when(cityRG.checkedRadioButtonId){
 
-            R.id.blrR -> cityT.text = " Bangalore"
+            R.id.blrR -> cityT.text = "Bangalore"
             R.id.dlhR -> cityT.text = "Delhi"
             R.id.mumR -> cityT.text = "Mumbai"
             R.id.hydR -> cityT.text = "Hyderbad"
@@ -34,4 +34,5 @@ class RadioButtonActivity : AppCompatActivity() {
         }
 
     }
+
 }
